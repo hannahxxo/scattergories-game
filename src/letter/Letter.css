@@ -1,0 +1,33 @@
+.Letter {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50%;
+    border: 2px solid black;
+  }
+  .Letter-Top {
+    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  .Letter-Top-Btn {
+    padding: 3px;
+    font-size: 20px;
+  }
+  .Letter-Top-Btn:hover {
+    border: 2px solid white;
+    background: black;
+    color: white;
+    cursor: pointer;
+  }
+  .Letter-Display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75%;
+  }
+  .Letter-Display-H1 {
+    font-size: 175px;
+  }

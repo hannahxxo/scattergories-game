@@ -1,25 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import Letter from './letter/Letter'
+import Timer from './timer/Timer';
+import Categories from './categories/Categories';
+import { useState } from 'react';
 
 function App() {
+  const [hide, setHide] = useState(true);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='App-Section-One'>
+        <Letter />
+        <Timer setHide={setHide} />
+      </div>
+      <div className='App-Section-Two'>
+        <Categories hide={hide} setHide={setHide} />
+      </div>
     </div>
   );
 }
-
 export default App;

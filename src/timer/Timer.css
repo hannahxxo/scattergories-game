@@ -1,0 +1,33 @@
+.Timer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50%;
+    border: 2px solid black;
+  }
+  .Timer-Top {
+    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  .Timer-Top-Btn {
+    padding: 3px;
+    font-size: 20px;
+  }
+  .Timer-Top-Btn:hover {
+    border: 2px solid white;
+    background: black;
+    color: white;
+    cursor: pointer;
+  }
+  .Timer-Display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75%;
+  }
+  .Timer-Display-H1 {
+    font-size: 175px;
+  }
